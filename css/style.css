@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: #000; /* Black background color for the header */
     color: #fff; /* White text color for the header */
-    border-top: 10px solid #ffa500; /* Add a thicker border to the top */
+    border-top: 10px solid #16120c; /* Add a thicker border to the top */
     margin: 0; /* Remove margin */
     padding: 20px 0; /* Add padding to the header */
     text-align: center; /* Center the text horizontally */
@@ -29,12 +29,13 @@ header {
 
 /* Style the navigation bar with increased height */
 nav {
-    background-color: #ffa500; /* Salmon background color for the navigation bar */
+    background-color: salmon; /* Set the background color to salmon pink or your desired color */
+    color: white; /* Set text color to white or your desired color */
     height: 60px; /* Increase the height of the navigation bar */
     margin: 0; /* Remove margin */
     padding: 0; /* Remove padding */
-    display: flex; /* Ensure the navigation bar is a flex container */
-    justify-content: flex-start; /* Align the content to the left horizontally */
+    display: flex;
+    justify-content: space-between; /* Align content to both ends of the navigation bar */
     align-items: center; /* Center the content vertically */
 }
 
@@ -55,7 +56,6 @@ nav a {
     display: block; /* Make the links block-level elements */
     text-align: left; /* Align the text to the left within each link */
 }
-
 
 /* Set the page background to white */
 body {
@@ -81,8 +81,32 @@ img::before {
     left: 0; /* Position it to the left */
     z-index: -1; /* Place it behind the image */
 }
-footer{
+
+footer {
     text-align: center;
-    text-decoration: solid;
-    font-weight: bold;
+    background-color: grey; /* Set a background color for the footer */
+    color: white; /* Set text color to white or your desired color */
+    padding: 20px; /* Add some padding to the footer */
+    position: absolute; /* Set the position to absolute */
+    bottom: 0; /* Position it at the bottom of the viewport */
+    left: 0; /* Position it to the left */
+    right: 0; /* Position it to the right */
+}
+
+.centered-cell {
+    text-align: center;  /* Center text within the cell */
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse; /* Collapse borders to form a grid */
+    max-width: 100%; /* Set a maximum width to prevent the table from exceeding its container */
+    width: auto; /* Set the table width to adjust to its content */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Add a 1px solid border to table headers and cells */
+    padding: 5px; /* Reduce cell padding for a more compact layout */
+    text-align: center; /* Center text within table headers and cells */
+    word-wrap: break-word; /* Enable word wrapping for long text */
 }
