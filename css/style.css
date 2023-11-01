@@ -62,6 +62,11 @@ body {
     background-color: #fff; /* White background color for the entire page */
 }
 
+/* Ensure text wraps within the container */
+p, table {
+    word-wrap: break-word; /* Enable word wrapping for long text */
+}
+
 img {
     padding: 10px;
     display: block; /* Make the image a block-level element */
@@ -95,12 +100,12 @@ footer {
 
 .centered-cell {
     text-align: center;  /* Center text within the cell */
-    padding: 10px;
+    padding: 10;
 }
 
 table {
     border-collapse: collapse; /* Collapse borders to form a grid */
-    max-width: 100%; /* Set a maximum width to prevent the table from exceeding its container */
+    max-width: 100%; /* Set a maximum width to prevent table from exceeding its container */
     width: auto; /* Set the table width to adjust to its content */
 }
 
@@ -108,5 +113,4 @@ th, td {
     border: 1px solid #ddd; /* Add a 1px solid border to table headers and cells */
     padding: 5px; /* Reduce cell padding for a more compact layout */
     text-align: center; /* Center text within table headers and cells */
-    word-wrap: break-word; /* Enable word wrapping for long text */
 }
