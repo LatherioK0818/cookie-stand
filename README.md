@@ -1,3 +1,3 @@
 # cookie-stand
-Lab: Class 06
-![Alt text](image.png)
+Lab: Class 07
+![Alt text](image-1.png)
