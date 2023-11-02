@@ -87,16 +87,6 @@ img::before {
     z-index: -1; /* Place it behind the image */
 }
 
-footer {
-    text-align: center;
-    background-color: grey; /* Set a background color for the footer */
-    color: white; /* Set text color to white or your desired color */
-    padding: 20px; /* Add some padding to the footer */
-    position: absolute; /* Set the position to absolute */
-    bottom: 0; /* Position it at the bottom of the viewport */
-    left: 0; /* Position it to the left */
-    right: 0; /* Position it to the right */
-}
 
 .centered-cell {
     text-align: center;  /* Center text within the cell */
@@ -113,4 +103,13 @@ th, td {
     border: 1px solid #ddd; /* Add a 1px solid border to table headers and cells */
     padding: 5px; /* Reduce cell padding for a more compact layout */
     text-align: center; /* Center text within table headers and cells */
+}
+footer {
+    text-align: center;
+    background-color: grey; /* Set a background color for the footer */
+    color: white; /* Set text color to white or your desired color */
+    padding: 20px; /* Add some padding to the footer */
+    bottom: 0; /* Position it at the bottom of the viewport */
+    left: 0; /* Position it to the left */
+    right: 0; /* Position it to the right */
 }
