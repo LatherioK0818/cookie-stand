@@ -13,12 +13,33 @@
     </header>
     <nav>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/sales.html">Sales Data</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sales.html">Sales Data</a></li>
         </ul>
     </nav>
     <main>
         <h2>Sales Data</h2>
+        <section id="cookie-stand-form">
+            <h2>Add New Cookie Stand</h2>
+            <form id="new-form">
+                <fieldset>
+                        <label for="name">Location Name:</label>
+                        <input type="text" id="name" required><br>
+                  
+                        <label for="min-customers">Min Customers:</label>
+                        <input type="number" id="min-cust" required><br>
+                  
+                        <label for="max-customers">Max Customers:</label>
+                        <input type="number" id="max-cust" required><br>
+                  
+                        <label for="avg-cookies">Avg Cookies per Customer:</label>
+                        <input type="number" id="avg-cookies" required><br>
+                        <div id="button">
+                        <button type="submit">Add Location</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
         <section id="sales-list">
             <table>
                 <thead>
@@ -43,8 +64,8 @@
                 </thead>
                 <tbody id="sales-data">
                 </tbody>
-                <tfoot>
-                    <tr>
+                <tfoot id = "Totals">
+                    <tr id ="Totals">
                         <td>Totals</td>
                         <td id="total-6am"></td>
                         <td id="total-7am"></td>

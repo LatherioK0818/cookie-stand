@@ -87,23 +87,58 @@ img::before {
     z-index: -1; /* Place it behind the image */
 }
 
-
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
 .centered-cell {
     text-align: center;  /* Center text within the cell */
     padding: 10;
 }
 
+/* Modify the table styling to prevent the footer row content from interfering with the first column */
 table {
-    border-collapse: collapse; /* Collapse borders to form a grid */
-    max-width: 100%; /* Set a maximum width to prevent table from exceeding its container */
-    width: auto; /* Set the table width to adjust to its content */
+    border-collapse: collapse;
+    max-width: 80%;
+    margin: 0 auto; /* Center the table horizontally */
+    border: 1px solid #111;
+}
+th, tfoot {
+    border: 1px solid #2c2b2b;
+    padding: 5px;
+    text-align: center;
+    background-color: grey;
+    color: #f0f0f0;
 }
 
-th, td {
-    border: 1px solid #ddd; /* Add a 1px solid border to table headers and cells */
-    padding: 5px; /* Reduce cell padding for a more compact layout */
-    text-align: center; /* Center text within table headers and cells */
+tbody td {
+    background-color: salmon;
+    border: 1px solid #000; /* Add a border to separate table cells */
+    padding: 12px;
 }
+td:last-of-type {
+    background-color: grey;
+    border-top: 1px solid #2c2b2b; /* Adjust the border color to match the th and tfoot */
+    color: white;
+
+}
+#Totals {
+    border: 1px solid #2c2b2b;
+    padding: 5px;
+    text-align: center;
+    background-color: grey;
+    color: #f0f0f0;
+}
+
+tfoot td {
+    background-color: grey;
+    border-top: 1px solid #2c2b2b;
+    color: #f0f0f0;
+}
+
 footer {
     text-align: center;
     background-color: grey; /* Set a background color for the footer */
